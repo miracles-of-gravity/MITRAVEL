@@ -1,0 +1,145 @@
+//! SWIPER  START
+
+
+.swiper-video {
+   // border: 1px solid red;
+   width: 100%;
+   // height: 700px;
+   overflow: hidden;
+   padding: 100px 0px;
+   // height: 700px;
+
+}
+
+.swiper-video__slide {
+   position: relative;
+   border-radius: 8px;
+   overflow: hidden;
+   width: 887px;
+   height: 550px;
+   background: #E4E3E4;
+   // border: 2px solid black;
+   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+   transition: transform .4s ease;
+
+}
+
+//НАБУДУЩЕЕ
+.swiper-video__slide video {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.swiper-video__title {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   padding: 30px;
+   font-size: 28px;
+   line-height: 40px;
+   color: white;
+   z-index: 10;
+   transform: translateY(200px);
+   transition: .3s;
+}
+
+
+.swiper-play {
+   position: absolute;
+   top: 22px;
+   left: 37px;
+   width: 100px;
+   height: 100px;
+   background: url('../image/icon/swiper_play.svg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+
+
+
+.swiper-slide-active .swiper-video__title {
+   transform: translateY(0px);
+   transition: .3s;
+}
+
+
+.swiper-video__slide::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 60%;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.462) 100%);
+   width: 100%;
+   opacity: 0;
+   transition: 1s;
+}
+
+
+//Делаем плавное появление для клавного слайдера 
+.swiper-slide-active::after {
+   opacity: 1;
+   transition: .3s;
+}
+
+// .swiper-slide-active {
+//    transform: scale(2);
+// }
+
+
+//БЫЛА ПРОБЛЕМА С main-slider СЛАЙДЕРОМ, НУ ТИПА ЕМУ ТОЖЕ ЗАДАНО УВИЛИЧЕНЕ
+.swiper-video .swiper-slide-active {
+   transform: scaleX(1.162) scaleY(1.2);
+   transition: transform .3s ease-in-out;
+
+}
+
+
+.swiper-slide__image {
+   width: 100%;
+   height: 100%;
+
+   // border: 1px solid green;
+}
+
+.swiper-slide__image img {
+   min-width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+//! SWIPER END
+
+
+
+.featured-videos {
+   padding: 149px 0px 0px 0px;
+   // height: 100vh;
+}
+
+.featured-videos__title {
+   color: #1C2E3D;
+   font-size: 64px;
+   line-height: 80px;
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0px 24px 0px;
+
+}
+
+.featured-videos__desc {
+   text-align: center;
+   max-width: 634px;
+   // margin: 0 auto;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #788692;
+   margin: 0px auto 55px auto;
+}

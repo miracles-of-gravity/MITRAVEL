@@ -1,0 +1,43 @@
+body {
+   // background: #393939;
+   // color: white;
+   font-family: 'SFProDisplay';
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.main {
+   flex: 1 0 auto;
+}
+
+.conteiner {
+   max-width: 1606px;
+   margin: 0 auto;
+   padding: 0px 20px;
+
+}
+
+
+// Чтобы убрать кретик 
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+   display: none;
+}
+
+// Чтобы убрать крестик 
+
+
+.btn-reset {
+   border: none;
+   background-color: initial;
+   cursor: pointer;
+   padding: 0;
+}

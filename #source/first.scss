@@ -1,0 +1,474 @@
+.first {
+   height: 100vh;
+   min-height: 650px;
+   background: url('../image/img/MaskGroup.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 219px 0px 0px 0px;
+   color: white;
+}
+
+
+
+
+
+.first__link {
+   color: white;
+   border-radius: 100px;
+   background: rgb(30, 30, 30, 0.9);
+   padding: 15px 30px;
+   text-transform: uppercase;
+   display: inline-block;
+   margin: 0px 0px 40px 0px;
+   font-size: 11px;
+   letter-spacing: 2px;
+
+   position: relative;
+   z-index: 10;
+   overflow: hidden;
+
+}
+
+
+.first__link::after {
+   content: '';
+   // width: 1%;
+   width: 22%;
+   border-radius: 50%;
+   z-index: -1;
+   height: 1%;
+   background: rgba(255, 255, 255, 0.4);
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transition: 1s;
+   transform: translateY(- 50%);
+}
+
+.first__link:hover::after {
+
+   // width: 100%;
+   // transition: width .3s;
+}
+
+.first__link::before {
+   content: '';
+
+
+   width: 20%;
+   border-radius: 50%;
+   z-index: -1;
+   height: 100%;
+   background: rgb(5, 5, 5, .7);
+   position: absolute;
+   left: 0;
+   top: 0;
+   transition: 1s;
+
+}
+
+
+.first__link:hover::before {
+   border-radius: initial;
+   width: 100%;
+   transition: width .7s;
+}
+
+
+
+
+
+
+.first__title {
+   color: white;
+   max-width: 42%;
+   // font-size: 80px;
+   font-size: 5.7rem;
+   line-height: 84px;
+   margin: 0px 0px 40px 0px;
+
+
+}
+
+.first__disc {
+   color: white;
+   font-size: 0.875em;
+   line-height: 16px;
+   max-width: 33%;
+   margin: 0px 0px 53px 0px;
+   position: relative;
+   z-index: 5;
+
+}
+
+.first__button {
+   text-transform: uppercase;
+   background: #e8594e;
+   color: white;
+   padding: 33px 80px;
+   // border-radius: 8px;
+   letter-spacing: 2px;
+   font-size: 12px;
+   position: relative;
+   z-index: 5;
+   font-weight: 800;
+   // transition: background-color 0.3s;
+   // transition: 3s;
+   overflow: hidden;
+}
+
+
+.first__button:hover {
+   background: #ec1f10;
+   box-shadow: 0px 0px 10px #ec1f10;
+   transition: 2s step-start;
+   transition-delay: 1s;
+}
+
+
+.button__line {
+   position: absolute;
+   display: block;
+}
+
+.button__line--top {
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(90deg, transparent, white);
+}
+
+.first__button:hover .button__line--top {
+   left: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(270deg, transparent, white);
+}
+
+.first__button:hover .button__line--bottom {
+   right: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+}
+
+.button__line--left {
+   left: 0;
+   bottom: -100%;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(0deg, transparent, white);
+}
+
+.first__button:hover .button__line--left {
+   bottom: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+}
+
+.button__line--right {
+   right: 0;
+   top: -100%;
+   width: 3px;
+   height: 100%;
+   background: linear-gradient(180deg, transparent, white);
+}
+
+.first__button:hover .button__line--right {
+   top: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+
+}
+
+
+
+
+
+
+
+.conteiner__first {
+   position: relative;
+   // border: 1px solid red;
+   height: 100%;
+
+   // padding: 219px 0px 200px 0px;
+   // padding-bottom: 200px;
+}
+
+
+
+.first__footer {
+   // background: red;
+   position: absolute;
+   // Вариант первый - добавить отступы
+   left: 50%;
+   transform: translateX(-50%);
+   width: calc(100% - 40px);
+   // Вариант первый - добавить отступы
+   bottom: 0;
+   // border: 1px solid red;
+   // РЕшение через padding 
+   // left: 0;
+   // width: 100%;
+   // padding: 0px 20px;
+
+   // РЕшение через padding 
+   display: flex;
+   align-items: flex-end;
+   // 
+
+}
+
+
+.form-search {
+   height: 120px;
+   flex-shrink: 0;
+   width: 68%;
+   position: relative;
+   overflow: hidden;
+   // border-top-right-radius: 8px;
+   border-top-left-radius: 8px;
+
+   // border: 1px solid red;
+}
+
+
+.form-search__field {
+   box-shadow: inset 0px -2px 0px rgba(223, 223, 223, 0.5);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+   min-height: 120px;
+   // Я решил обойтись без фиксированной высоты и задать ее padding-гом что мне кажется более логично
+   padding: 50px 90px 50px 56px;
+   border: initial;
+   color: #1C2E3D;
+
+}
+
+
+
+
+.form-search__field::placeholder,
+.form-search__field {
+   font-size: 16px;
+   color: #1C2E3D;
+
+}
+
+
+
+.form-search__button {
+
+   height: 18px;
+   width: 18px;
+   background: url('../image/icon/search.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   right: 62px;
+   top: 50%;
+   transform: translateY(-50%);
+
+}
+
+
+
+.main-slader {
+   // overflow: hidden;
+   border-top-right-radius: 8px;
+   border-top-left-radius: 8px;
+   font-size: 0px;
+   width: 502px;
+   // border: 1px solid red;
+
+}
+
+.main-slider__text {
+   // вместо фиксированной высоты и выравнивания текста с помощью флексов я просто задал padding
+
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   // min-width: 100%;
+   width: 100%;
+   height: 100%;
+   padding: 53px 0px;
+   text-align: center;
+   background: #73afba;
+   text-transform: uppercase;
+   color: white;
+   font-size: 12px;
+   letter-spacing: 2.18182px;
+   font-weight: 800;
+   // border: 1px solid red;
+   min-height: 120px;
+   // border: 1px solid red;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+   display: none;
+
+}
+
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+
+   // position: absolute;
+   // right: 0;
+   // bottom: 0;
+   top: initial;
+
+   bottom: 53px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 14px;
+   height: 14px;
+   color: black;
+
+   // font-size: 14px;
+}
+
+.swiper-button-prev {
+   background-image: url('../image/icon/arrow-left.svg');
+   left: 50px;
+}
+
+
+.swiper-button-next {
+   background-image: url('../image/icon/arrow-right.svg');
+   right: 50px;
+
+}
+
+.main-slider__media {
+   // border: 1px solid red;
+   width: 502px;
+   height: 280px;
+   position: relative;
+}
+
+.main-slider__play {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+
+
+   border: initial;
+
+   background: url('../image/icon/play_main_swiper.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 32px;
+   height: 42px;
+   z-index: 50;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+}
+
+.main-slider__media img,
+.main-slider__media video {
+   min-width: 100%;
+   height: 100%;
+   display: inline-block;
+   object-fit: cover;
+   // border: 1px solid red;
+}
+
+
+
+// .main-slider__media video {
+//    min-width: 100%;
+//    height: 100%;
+//    display: inline-block;
+//    object-fit: cover;
+//    // border: 1px solid red;
+// }
+
+
+
+
+
+@media(max-height: 1079px) {
+   .first {
+      padding: 135px 0px 0px 0px;
+   }
+
+
+}
+
+@media(max-height:850px) {
+   .first {
+      padding: 115px 0px 0px 0px;
+   }
+
+   .first__link {
+      margin: 0px 0px 20px 0px;
+   }
+
+   .first__title {
+      font-size: 5rem;
+      margin: 0px 0px 20px 0px;
+   }
+
+   .first__disc {
+      font-size: 0.8em;
+      margin: 0px 0px 33px 0px;
+
+   }
+}
+
+@media(max-height:764px) {
+   .first {
+      padding: 120px 0px 0px 0px;
+   }
+
+   .first__title {
+      font-size: 4rem;
+      margin: 0px 0px 15px 0px;
+      line-height: 1;
+   }
+
+   .first__disc {
+      font-size: 0.750em;
+      margin: 0px 0px 33px 0px;
+
+   }
+
+   .first__button {
+
+
+      padding: 30px 75px;
+      font-size: 10px;
+
+   }
+
+
+}
+
+@media(max-height:704px) {
+   .first__title {
+      font-size: 3em;
+   }
+}

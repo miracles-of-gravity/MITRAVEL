@@ -1,0 +1,190 @@
+.header {
+   padding: 53px 0px 0px 0px;
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   // border: 1px solid red;
+   z-index: 10;
+}
+
+
+
+
+.header__flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+
+
+.socials {
+   display: flex;
+   align-items: flex-end;
+}
+
+.socials__item:not(:last-child) {
+   margin: 0px 40px 0px 0px;
+}
+
+.socials__link {
+   display: block;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: opacity .3s;
+}
+
+.socials__link-fb {
+   width: 11px;
+   height: 20px;
+   background: url('../image/icon/fb.svg');
+
+}
+
+
+.socials__link-tw {
+   width: 20px;
+   height: 16.31px;
+   background: url('../image/icon/twitter.svg');
+
+}
+
+
+.socials__link-tw:hover,
+.socials__link-fb:hover {
+   opacity: 0.5;
+   transition: .3s;
+}
+
+
+
+
+.header__logo {
+   line-height: 25.78px;
+   font-family: 'SFProDisplay';
+   color: white;
+   text-transform: uppercase;
+   // font-family: 'SFProDisplay';
+   font-size: 22px;
+   line-height: 1;
+   text-align: center;
+   letter-spacing: 2px;
+}
+
+
+
+
+
+
+.header__burger {
+   position: relative;
+   height: 10px;
+   width: 48px;
+
+}
+
+
+
+.header__burger::after,
+.header__burger::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background: white;
+   left: 0;
+
+}
+
+.header__burger::after {
+   top: 0;
+}
+
+.header__burger::before {
+   bottom: 0;
+}
+
+.header__burger:hover::after,
+.header__burger:hover::before {
+   background: red;
+   transition: 300ms;
+}
+
+.menu {
+
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   right: -150vw;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #181818;
+   opacity: .9;
+   z-index: 100;
+   // display: none;
+   transition: right .2s ease;
+}
+
+
+
+.menu--visible {
+   right: 0;
+   transition: right .2s ease;
+}
+
+
+
+.menu__item:not(:last-child) {
+   margin: 0px 0px 50px 0px
+}
+
+.menu__item {
+   text-align: center;
+}
+
+.menu__link {
+   color: white;
+   font-size: 50px;
+   // text-align: center;
+   display: inline-block;
+}
+
+.menu__close {
+   width: 50px;
+   height: 50px;
+   // border: 1px solid white;
+
+   background: none;
+   position: absolute;
+   right: 100px;
+   top: 100px;
+}
+
+
+.menu__close::after,
+.menu__close::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 50%;
+   background: white;
+   width: 100%;
+   height: 2px;
+   transform: translateY(-50%);
+}
+
+.menu__close::after {
+   transform: rotate(40deg);
+
+   // background: red;
+
+}
+
+.menu__close::before {
+   transform: rotate(-40deg);
+
+}

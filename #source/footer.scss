@@ -1,0 +1,139 @@
+.footer {
+   padding: 124px 0px 0px 0px;
+   height: 578px;
+   // background: white;
+
+   // box-shadow: inset 0px 1px 0px rgba(179, 179, 179, 0.5);
+   border-top: 1px solid rgba(179, 179, 179, 0.5);
+   // margin-bottom: 200px;
+}
+
+.footer__columns {
+   display: flex;
+   justify-content: space-between;
+   // border: 1px solid red;
+   margin: 0px 0px 121px 0px;
+}
+
+.footer__caption {
+   font-family: HelveticaNeue;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2.15px;
+   text-transform: uppercase;
+   font-weight: 800;
+   margin: 0px 0px 31px 0px;
+   padding: 0px 0px 32px 0px;
+
+   display: inline-block;
+   position: relative;
+
+
+}
+
+.footer__caption::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   background: green;
+   width: 48px;
+   height: 2px;
+}
+
+
+.footer__link {
+   font-family: SFProDisplay;
+   font-size: 13px;
+   line-height: 29px;
+   color: #959EA6;
+
+}
+
+
+.subs-form {
+   display: flex;
+   flex-direction: column;
+   width: 368px; // это можно и не задавать так как у меня padding
+
+}
+
+.subs-form__field {
+   width: 100%; // это можно не задавать так как у меня padding? НО тогда нужно будет еще задать высоту поля
+   padding: 22px 75px 22px 32px;
+   background: initial;
+   border: none;
+   font-family: SFProDisplay;
+   font-size: 16px;
+   line-height: 19px;
+   letter-spacing: -0.20000000298023224px;
+   background: #FFFFFF;
+   color: #1B1916;
+   border: 1px solid #E4E4E4;
+   border-radius: 8px;
+   margin: 0px 0px 16px 0px;
+   background: url('../image/icon/footer__user.svg');
+   // background-size: cover;
+   background-position: calc(100% - 31px) center;
+   background-repeat: no-repeat;
+}
+
+.subs-form__field::placeholder {
+   font-size: 16px;
+   line-height: 19px;
+   letter-spacing: -0.20000000298023224px;
+   color: #1B1916;
+   font-weight: 100;
+   opacity: 0.5;
+}
+
+
+.subs-form__btn {
+   padding: 25px 120px;
+   color: white;
+   text-transform: uppercase;
+   background: #73AFBA;
+   border-radius: 8px;
+   font-family: SFProDisplay;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2.1818180084228516px;
+   display: inline-block;
+
+}
+
+.footer__bottom {
+   // display: flex;
+   // border: 1px solid red;
+   // display: flex;
+   // align-items: flex-end;
+
+   border-top: 1px solid rgba(179, 179, 179, 0.5);
+}
+
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+   padding: 32px 0px;
+}
+
+
+.footer-copy__link {
+   display: flex;
+
+}
+
+.footer__copy,
+.footer-copy__item {
+   font-family: SFProText;
+   font-size: 13px;
+   line-height: 15px;
+   letter-spacing: 0px;
+   color: #959EA6;
+
+
+}
+
+.footer-copy__item:not(:last-child) {
+   margin: 0px 43px 0px 0px;
+}
